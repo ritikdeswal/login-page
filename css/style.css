@@ -182,6 +182,29 @@
             background-position: right;
         }
         
+
+        
+/*error animation for null input field*/
+
+        .validate-error {
+             animation: taunt 250ms, fade paused;
+        }
+
+            @keyframes taunt {
+                  0%,
+                  100% {
+                    transform: translateX(0);
+                  }
+                  35% {
+                    transform: translateX(-10%);
+                  }
+                  70% {
+                    transform: translateX(10%);
+                  }
+              }
+        
+/*---------------------------------------*/
+
         @media screen and (max-width: 1050px) {
             .container {
                 grid-gap: 5rem;
